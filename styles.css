@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.books-list {
+  border: 2px solid black;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  padding: 0.4rem;
+}
+
+.backgroundColor {
+  background-color: rgb(232, 224, 224);
+}
+
+.remove {
+  position: absolute;
+  top: -1000px;
+}
+
+.mainheader {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+.name {
+  font-size: 1rem;
+}
+
+.newBook {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.remover {
+  margin-left: auto;
+  border: 2px solid black;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spner {
+  border: 1.5px solid black;
+  width: 6rem;
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 2px solid black;
+  margin-top: 0.5rem;
+}
+
+.addBook {
+  margin-top: 0.5rem;
+  width: 2rem;
+  margin-left: auto;
+  border: 2px solid black;
+}
