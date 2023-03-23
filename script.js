@@ -19,6 +19,7 @@ class Book {
         <button class="remover" id=${book.id}>Remove</button>
     </div>`;
     });
+    // eslint-disable-next-line no-plusplus
     for (let i = 0; i < newB.length; i++) {
       if (i % 2 !== 0) {
         newB[i].classList.add('backgroundColor');
