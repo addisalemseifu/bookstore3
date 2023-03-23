@@ -10,25 +10,63 @@
 </head>
 
 <body>
-    <h1 class="mainheader">Awesome Books</h1>
-    <div class="books-list">
-        <!-- <div class="newBook">
-            <h2 class="name"></h2>
-            <h2 class="title"></h2>
-            <button>remve</button>
-        </div> -->
-        
-    </div>
-
-    <div class="user-input">
-        <span class="spner"></span>
-        <h1>Add a new book</h1>
-        <form>
-            <input type="text" placeholder="Title" id="txtTitle" class="txtTitle" required>
-            <input type="text" placeholder="Author" id="txtAuthor" class="txtAuthor" required>
-            <button type="submit" class="addBook">Add</button>
-        </form>
-    </div>
+    <header>
+        <nav class="navigator">
+            <h2>Awesome Books</h2>
+            <ul class="nav_list">
+                <li class="list" data-id="lister">List</li>
+                <li class="list" data-id="addN">Add new</li>
+                <li class="list" data-id="con">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="section-1 main active" data-id="lister">
+            <div class="time"></div>
+            <h1 class="mainheader">Awesome Books</h1>
+            <div class="books-list">
+                <!-- <div class="newBook">
+                    <h2 class="name"></h2>
+                    <h2 class="title"></h2>
+                    <button>remve</button>
+                </div> -->
+            </div>
+        </section>
+    
+        <section class="section-2 main" data-id="addN">
+            <div class="time"></div>
+            <div class="user-input">
+                <h1 class="header_one">Add a new book</h1>
+                <form>
+                    <input type="text" placeholder="Title" id="txtTitle" class="txtTitle" required>
+                    <input type="text" placeholder="Author" id="txtAuthor" class="txtAuthor" required>
+                    <button type="submit" class="addBook">Add</button>
+                </form>
+            </div>
+        </section>
+    
+        <section class="section-3 main" data-id="con">
+            <div class="time"></div>
+            <div class="contact_container">
+                <h1 class="header_three">Contact information</h1>
+                <p class="para">Do have any questions or you just want to say "Hellow"? you can react out to us!</p>
+                <ul class="address_list">
+                    <li class="adlist_main">Our e-mail:addisalemseifu@gmail.com</li>
+                    <li class="adlist_main">Our Phone number:+251910528787</li>
+                    <li class="adlist_main">Our address: Streetname 22, 33345 Addisababa,Ethiopia</li>
+                </ul>
+            </div>
+            
+            
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer">Copyright ...</div>
+    </footer>
+    
+    
     <script src="script.js"></script>
 </body>
 </html>

@@ -2,6 +2,38 @@ const addBooks = document.querySelector('.addBook');
 const booksList = document.querySelector('.books-list');
 const remover = document.getElementsByClassName('remover');
 const newB = document.getElementsByClassName('thebook');
+const list = document.getElementsByClassName('list');
+const main = document.getElementsByClassName('main');
+const time = document.getElementsByClassName('time');
+// eslint-disable-next-line no-plusplus
+for (let g = 0; g < time.length; g++) {
+  time[g].innerHTML = Date();
+}
+
+// eslint-disable-next-line no-plusplus
+for (let i = 0; i < list.length; i++) {
+  list[i].addEventListener('click', () => {
+  // eslint-disable-next-line no-plusplus
+    for (let j = 0; j < main.length; j++) {
+      if (list[i].dataset.id === main[j].dataset.id) {
+        // eslint-disable-next-line no-plusplus
+        for (let m = 0; m < main.length; m++) {
+          if (main[m].classList.contains('active')) {
+            main[m].classList.remove('active');
+          }
+        }
+        // eslint-disable-next-line no-plusplus
+        for (let d = 0; d < list.length; d++) {
+          if (list[d].classList.contains('active_link')) {
+            list[d].classList.remove('active_link');
+          }
+        }
+        main[j].classList.add('active');
+        list[j].classList.add('active_link');
+      }
+    }
+  });
+}
 const newBooks = JSON.parse(localStorage.getItem('mydata')) || [];
 
 class Book {
